@@ -1,4 +1,5 @@
 <script setup>
+// usar ruta /usuarios para visualizar contenido
 import { ref } from 'vue'
 import { useUsuariosStore } from '@/stores/usuarios'
 
