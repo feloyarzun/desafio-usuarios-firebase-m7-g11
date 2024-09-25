@@ -1,4 +1,5 @@
 <script setup>
+// usar ruta /usuarios para visualizar contenido
 import { useUsuariosStore } from '@/stores/usuarios'
 import { onMounted } from 'vue'
 

@@ -5,6 +5,7 @@ import { ref } from 'vue'
 
 export const useUsuariosStore = defineStore('usuarios', () => {
   const usuarios = ref([])
+  const usuarioRef = collection($db, 'usuarios')
 
   async function fetchUsuarios() {
     try {
@@ -20,7 +21,6 @@ export const useUsuariosStore = defineStore('usuarios', () => {
 
   async function addUsuario(data) {
     try {
-      const usuarioRef = collection($db, 'usuarios')
       await addDoc(usuarioRef, { nombre: data.nombre, correo: data.correo })
     } catch (error) {
       console.error(error)

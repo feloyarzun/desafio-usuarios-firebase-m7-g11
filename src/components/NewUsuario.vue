@@ -18,7 +18,7 @@ function handleAddUsuario() {
 
 <template>
   <h1 class="text-center">Añadir Usuarios</h1>
-  <form @submit.prevent="handleAddUsuario" class="mb-4 p-4 bg-dark text-white rounded">
+  <form @submit.prevent="handleAddUsuario" class="mb-4 p-4 bg-dark text-white">
     <div class="mb-3">
       <label for="nombre" class="form-label">Nombre</label>
       <input
